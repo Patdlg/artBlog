@@ -22,11 +22,12 @@ mat-card {
 }
 
 img.mat-card-image {
-  height: 300px;;
+  height: 300px;
 }
 
 .jumbotron {
-  background-image: url(https://d2jv9003bew7ag.cloudfront.net/uploads/Pow-Wow-Hawaii-2015.jpg);
+
+  background-image:url(https://d2jv9003bew7ag.cloudfront.net/uploads/Pow-Wow-Hawaii-2015.jpg);
   background-size: cover;
   height: 50%;
   text-align: center;
@@ -34,8 +35,13 @@ img.mat-card-image {
   font-weight: bold;
 }
 
+
+
 h1 {
   text-align: center;
+
+  font-size: 40px;
+
 }
 
 iframe {
@@ -43,6 +49,11 @@ iframe {
 margin: 0 auto;
 margin-bottom: 5%;
 margin-top: 5%;
+}
+
+.lead {
+
+  font-size: 25px;
 }
 
 

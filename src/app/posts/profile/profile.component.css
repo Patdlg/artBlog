@@ -1,0 +1,50 @@
+.container {
+  margin-top: 50px;
+
+}
+
+img {
+  display: block;
+margin: 0 auto;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  /* display: grid;
+  grid-template-rows: auto;
+   grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 30%; */
+   list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  grid-template-rows: auto;
+
+
+
+
+}
+
+mat-card {
+  margin: 10px 0;
+  width: 400px;
+   margin: 0 auto;
+
+}
+
+img {
+  height: 300px;
+   max-width: 100%;
+}
+
+h3 {
+   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

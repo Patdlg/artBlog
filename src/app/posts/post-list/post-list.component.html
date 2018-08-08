@@ -1,7 +1,7 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">artBlock</h1>
-    <p class="lead">A place where artist can upload their art and search for open position! </p>
+    <p class="lead">A place where artist can upload their art and search for open positions! </p>
     <p class="lead">Start Posting You Art Today!</p>
   </div>
 </div>
@@ -15,7 +15,7 @@
       <img mat-card-image src="{{post.image}}" alt="{{post.title}}">
       <h2>{{post.title}}</h2>
       <p>
-        <small>Posted by {{post.author}} &bull; on {{post.published | date:"fullDate"}}</small>
+        <small>Posted by {{post.author}} &bull; on {{post.published.toDate() | date:"fullDate"}}</small>
       </p>
     </mat-card-content>
     <mat-card-actions align="end" *ngIf="auth.currentUserId === post.authorId">

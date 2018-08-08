@@ -48,7 +48,21 @@ export class ProfileComponent implements OnInit {
     private afStorage: AngularFireStorage
   ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.postService.getPosts().subscribe(posts=>{
+      this.posts = posts;
+       this.queryPosts = this.posts.filter(post=>{
+         return post.authorId === this.auth.currentUserId
+
+       });
+       console.log(this.queryPosts);
+    })
+  }
+
+  posts: Array<any>;
+  queryPosts = [
+
+  ]
 
   onChangeImage(event) {
     const file = event.target.files[0]

@@ -65,7 +65,7 @@ export class PostJobsComponent implements OnInit {
       authorId: this.auth.currentUserId,
       content: this.content,
       contact: this.contact,
-      image: this.image || null,
+      image: this.image || "http://murraybridgecommunitycentre.com.au/wp-content/uploads/2017/05/artists-wanted.jpeg",
       published: new Date(),
       title: this.title
     }

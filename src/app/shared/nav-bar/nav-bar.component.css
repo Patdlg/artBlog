@@ -5,3 +5,7 @@ span:focus {
   outline: none;
   border: 0;
 }
+
+img {
+  width: 50px;
+}
