@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$ArtBlog-app-primary: mat-palette($mat-blue-gray, 900);
+$ArtBlog-app-accent: mat-pallette($mat-red, A200);
+
+$ArtBlog-app-warn: mat-palette($mat-red);
+
+$ArtBlog-app-theme: mat-light-theme($ArtBlog-app-primary, $ArtBlog-app-accent, $ArtBlog-app-warn);
+
+@include angular-material-theme($ArtBlog-app-theme);

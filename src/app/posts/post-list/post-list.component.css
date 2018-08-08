@@ -1,0 +1,48 @@
+section {
+  /* display: grid;
+  grid-template-rows: auto;
+   grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 30%; */
+   list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+    grid-template-rows: auto;
+
+
+
+
+}
+
+mat-card {
+  margin: 10px 0;
+  width: 30%;
+
+}
+
+img.mat-card-image {
+  height: 300px;;
+}
+
+.jumbotron {
+  background-image: url(https://d2jv9003bew7ag.cloudfront.net/uploads/Pow-Wow-Hawaii-2015.jpg);
+  background-size: cover;
+  height: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+iframe {
+ display: block;
+margin: 0 auto;
+margin-bottom: 5%;
+margin-top: 5%;
+}
+
+

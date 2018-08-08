@@ -1,0 +1,27 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">artBlock</h1>
+    <p class="lead">A place where artist can upload their art and search for open position! </p>
+    <p class="lead">Start Posting You Art Today!</p>
+  </div>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gsLg5lqhIyE?autoplay=1" frameborder="0" allow="autoplay; encrypted-media"
+  allowfullscreen></iframe>
+
+<section>
+  <mat-card *ngFor="let post of posts | async">
+    <mat-card-content routerLink="{{post.id}}">
+      <img mat-card-image src="{{post.image}}" alt="{{post.title}}">
+      <h2>{{post.title}}</h2>
+      <p>
+        <small>Posted by {{post.author}} &bull; on {{post.published | date:"fullDate"}}</small>
+      </p>
+    </mat-card-content>
+    <mat-card-actions align="end" *ngIf="auth.currentUserId === post.authorId">
+      <button mat-icon-button (click)="delete(post.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>

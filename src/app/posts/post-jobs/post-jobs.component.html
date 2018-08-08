@@ -1,0 +1,34 @@
+<section>
+  <mat-accordion>
+    <mat-expansion-panel>
+
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Post a Job
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-form-field>
+        <input matInput placeholder="Job Title" [(ngModel)]="title" name="title">
+      </mat-form-field>
+
+
+
+      <br>
+      <mat-form-field>
+        <textarea matInput placeholder="Description" [(ngModel)]="content" name="content" rows="10">Position</textarea>
+      </mat-form-field>
+      <br>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Contact Information" [(ngModel)]="contact" name="contact" rows="10"></textarea>
+      </mat-form-field>
+
+
+      <br>
+      <button mat-raised-button routerLink="/jobs" (click)="createPost()" color="accent">{{saving}}</button>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>
