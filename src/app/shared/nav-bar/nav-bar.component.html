@@ -6,9 +6,8 @@
     <span routerLink="/">artBlock</span>
     <span class="spacer"></span>
         <button routerLink="/profile" mat-raised-button color="">Profile</button>
-
-    <button style="margin-left: 10px" routerLink="/dashboard" mat-raised-button color="">Post Your Masterpiece</button>
-        <button style="margin-left: 10px" routerLink="/jobs" mat-raised-button color="">Post a Job</button>
+<button style="margin-left: 10px" routerLink="/jobs" mat-raised-button color="">Post a Job</button>
+    <button style="margin-left: 10px" routerLink="/dashboard" mat-raised-button color="">Post Your Art</button>
 
     <div *ngIf="auth.afAuth.authState | async as user; else showLogin">
       <button (click)="auth.logout()" mat-button>Logout</button>
